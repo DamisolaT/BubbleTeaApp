@@ -37,6 +37,7 @@ class _ShopPageState extends State<ShopPage> {
                 fontSize: 20
               ),
               ),
+              const SizedBox(height: 10,),
               Expanded(
                 child: ListView.builder(
                   itemCount: value.shop.length,
@@ -47,7 +48,8 @@ class _ShopPageState extends State<ShopPage> {
                     // return that drink as a nice tile
                     return DrinkTile(
                       drink: individualDrink,
-                      onTap: () => goToOrderPage(individualDrink)
+                      onTap: () => goToOrderPage(individualDrink),
+                      trailing: Icon(Icons.arrow_forward),
                       );
 
           
