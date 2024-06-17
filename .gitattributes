@@ -1,0 +1,15 @@
+# Exclude documentation files
+*.md linguist-documentation
+
+# Exclude image assets
+assets/images/* linguist-vendored
+
+# Exclude configuration files
+*.yaml linguist-vendored
+*.lock linguist-vendored
+
+# Exclude generated files
+*.g.dart linguist-generated
+
+# Force Dart language classification for Dart files
+*.dart linguist-language=Dart
